@@ -13,7 +13,6 @@ class DFS():
         self.d = [0 for _ in range(n)]
         self.f = [0 for _ in range(n)]
 
-
     def dfs_visit(self,u,n):
         self.time += 1
         self.color[u] = 'GRAY'
@@ -23,7 +22,7 @@ class DFS():
                 continue
             if self.color[v] == 'WHITE':
                 self.dfs_visit(v,n)
-        self.color[u] == 'BLACK'
+        self.color[u] = 'BLACK'
         self.time += 1
         self.f[u] = self.time
 

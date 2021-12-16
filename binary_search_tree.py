@@ -3,7 +3,6 @@ class Node():
         self.data = data
         self.right = None
         self.left = None
-        
 
 class BST():
     def __init__(self):
