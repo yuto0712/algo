@@ -1,5 +1,4 @@
 from collections import defaultdict
-
 from numpy.lib.polynomial import roots
 
 class UnionFind():
