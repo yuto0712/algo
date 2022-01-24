@@ -3,7 +3,7 @@ def prim(M):
     color = [-1 for i in range(n)]
     d = [float('inf') for i in range(n)]
     p = [-1 for i in range(n)]
-    
+
     d[0] = 0
     p[0] = -1
     while True:
@@ -15,9 +15,9 @@ def prim(M):
 
         if mincost == float('inf'):
             break
-        
+
         color[u] = 1
-        
+
         for v in range(n):
             if color[v] != 1 and M[u][v] != -1:
                 if M[u][v] < d[v]:
